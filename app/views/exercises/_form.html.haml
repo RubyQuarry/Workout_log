@@ -1,0 +1,5 @@
+= simple_form_for([@workout, @workout.exercises.build]) do |f|
+  = f.input :name
+  = f.input :sets
+  = f.input :reps
+  = f.button :submit

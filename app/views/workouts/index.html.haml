@@ -1,0 +1,9 @@
+%h1 Hello, World!
+
+= link_to "NEW WORKOUT", new_workout_path
+
+
+- @workouts.each do |w|
+  %h2= w.date
+  %h3= w.workout 
+  %p= link_to w.mood, w

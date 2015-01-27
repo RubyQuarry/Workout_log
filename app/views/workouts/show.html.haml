@@ -1,0 +1,11 @@
+#workout
+  %p= @workout.date
+  %p= @workout.mood
+  %p= @workout.workout
+  %p= @workout.length
+  %div= link_to "EDIT", edit_workout_path(@workout)
+  %div= link_to "DELETE", workout_path(@workout), method: :delete, data: { confirm: "Are you sure?" }
+
+#exercises
+  = render @workout.exercises
+  = render "exercises/form"
