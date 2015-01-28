@@ -2,12 +2,12 @@
 lock '3.2.1'
 
 set :deploy_user, 'deploy'
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'Workout_log'
+set :repo_url, 'https://github.com/RubyQuarry/Workout_log'
 
 
-set :rbenv_type,:system
-set :rbenv_ruby,'2.1.2'
+set :rbenv_type, :system
+set :rbenv_ruby, '2.1.2'
 
 
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
