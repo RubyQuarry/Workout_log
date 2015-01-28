@@ -14,14 +14,12 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 
 set :rbenv_map, %w{rake gem bundle ruby rails}
 
-
 # Default branch is :mastedd
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
 # set :deploy_to, '/var/www/my_app'
 
-# Default value for :scm is :git
 set :scm, :git
 
 # Default value for :format is :pretty
@@ -34,7 +32,7 @@ set :scm, :git
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/database.yml, config/secrets.yml}
+set :linked_files, %w{ config/secrets.yml}
 
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vender/bundle public/system}
 
@@ -45,7 +43,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vender/bundle public
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-  set :keep_releases, 5
+set :keep_releases, 5
 
 namespace :deploy do
 
