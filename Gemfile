@@ -27,6 +27,20 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'bootstrap-sass'
 
+
+gem 'unicorn', '~> 4.8.3'
+
+group :development do 
+  gem 'capistrano', '~> 3.2.1'
+
+  gem 'capistrano-rails', '~> 1.1.0'
+
+  gem 'capistrano-bundler'
+
+  gem 'capistrano-rbenv',"~> 2.0"
+
+  gem'capistrano-cookbook', require: false
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
