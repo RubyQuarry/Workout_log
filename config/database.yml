@@ -27,3 +27,4 @@ production:
   pool: 5
   username: aj
   password: password
+  host: localhost
